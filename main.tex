@@ -1,0 +1,75 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{pgfgantt}
+\usepackage{enumitem}
+
+
+
+
+
+\usepackage{setspace}
+\onehalfspacing
+
+\title{%
+    \vspace{-4cm} % Space above title
+    Fed-MStacking: Heterogeneous Federated Learning With Stacking \\ 
+    Misaligned Labels for Abnormal Heart Sound Detection \\
+    \vspace{0.5cm} % Space below title
+}
+\author{%
+    Temidayo Tom Afelumo \\
+    \vspace{0.2cm} % Space after name
+    \large{Registration: 2411655} \\
+    \vspace{0.5cm} % Space before supervisor
+    % Supervisor: Dr. \\
+    \vspace{5cm} % Space after supervisor
+    School of Computer Science \& Electronic Engineering \\
+    University of Essex \\
+    \vspace{0.5cm} % Space at bottom
+}
+\date{\vspace{6cm}\ July 2, 2025} % Space before date
+
+\begin{document}
+
+\maketitle
+
+\input{sections/abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\newpage
+\include{sections/introduction}
+\include{sections/literature}
+\include{sections/goals}
+\include{sections/methodology}
+\include{sections/evaluation}
+\include{sections/projectplan}
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+% \bibliographystyle{IEEEtran}  % or plain, apalike, etc.
+% \bibliography{myreferences}  % your .bib file name without extension
+
+
+% \bibliographystyle{plainnat}
+% \bibliography{references}  % this uses references.bib
+
+
+
+\end{document}

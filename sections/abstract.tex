@@ -1,0 +1,14 @@
+
+
+
+\begin{abstract}
+    Cardiovascular diseases (CVDs) are the world's leading cause of death, with early diagnosis often limited in low-resource settings by inconsistent manual interpretation and privacy concerns around centralized AI solutions. This project proposes \textbf{MStacking}, a novel federated learning (FL) framework designed to detect abnormal heart sounds while safeguarding patient data. In MStacking, each healthcare institution trains its own binary classifier using only local data—typically covering the normal class and one abnormal class—reflecting real-world disadvantages such as label imbalance and varied computing resources.
+    
+    Instead of sharing sensitive data or model parameters, clients send prediction scores and data density estimates to a central server. A meta-learner then combines these outputs using a stacking ensemble approach to build a comprehensive global classifier. The development supports multimodal inputs, including 1D acoustic signals and 2D spectrograms of phonocardiogram (PCG) recordings.
+    
+    Experiments using publicly available datasets, like PhysioNet/CinC 2016, simulate federated conditions to benchmark MStacking against traditional centralized and FL models. Key evaluation metrics include accuracy, communication efficiency, and robustness to label noise and data imbalance.
+    
+    By enabling collaborative model training without exposing patient data, MStacking offers a practical, scalable, and privacy-preserving solution for AI-powered auscultation—especially in decentralized and diverse healthcare environments.
+    \end{abstract}
+    
+    

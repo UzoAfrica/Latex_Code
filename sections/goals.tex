@@ -1,0 +1,27 @@
+\chapter{Goals}
+
+\section{Goals}
+The primary goal of this project is to develop \textbf{MStacking}, a heterogeneous federated learning framework tailored for classifying abnormal heart sounds in a privacy-preserving manner. The system is designed to function effectively across decentralized healthcare settings, where institutions vary in both computational capabilities and the types of heart sound data they can access. By using a stacking ensemble strategy, MStacking enables collaborative learning without requiring sensitive patient data to be shared, aiming to deliver a more accurate, robust, and adaptable AI-driven auscultation tool.
+
+\section{Objectives}
+This project is guided by the following objectives:
+\begin{itemize}
+    \item \textbf{Support model heterogeneity:} Build a federated system that allows each client to choose its own model architecture based on local data volume and hardware constraints.
+    \item \textbf{Stacking ensemble integration:} Use meta-learning to combine predictions from various client models into a unified global classifier, even when local label distributions differ.
+    \item \textbf{Leverage multimodal data:} Enhance classification by incorporating both 1D acoustic features and 2D spectrogram representations of phonocardiogram (PCG) signals.
+    \item \textbf{Preserve data privacy:} Avoid direct data sharing by transmitting only high-level model outputs and statistical metadata between clients and the central server.
+    \item \textbf{Benchmark performance:} Evaluate MStacking against centralized and traditional federated learning methods using public datasets, with a focus on accuracy, generalization, and resilience to real-world data challenges.
+\end{itemize}
+
+\section{Scope and Limitations}
+\subsection*{Scope}
+This project centers on building a proof-of-concept federated learning framework—MStacking—for classifying abnormal heart sounds using heterogeneous client models and misaligned class labels. The system is tested in a simulated federated environment using public datasets like the PhysioNet/CinC 2016 Challenge and other open-access PCG sources. It supports multimodal input types, such as 1D audio signals and 2D spectrograms, and accommodates various model architectures (e.g., CNNs, random forests, FNNs) chosen by individual clients. Development is based on open-source libraries (e.g., PyTorch, Flower/FedML), with training designed to mimic privacy-preserving, decentralized healthcare scenarios.
+
+\subsection*{Limitations}
+\begin{itemize}
+    \item The prototype is simulation-only; it won’t be deployed in real hospitals or connected to physical stethoscope devices.
+    \item Experiments use static, publicly available datasets and do not involve real-time or clinical data.
+    \item Due to time and resource constraints, extensive hyperparameter tuning and in-depth ablation analysis are outside the project scope.
+    \item The focus is solely on classification tasks—regression or diagnostic recommendation features are not included.
+    \item Evaluation relies on offline performance metrics (e.g., accuracy, F1-score), without clinical trials or human-in-the-loop validation.
+\end{itemize}

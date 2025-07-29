@@ -1,0 +1,96 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: sections/introduction.aux
+A level-1 auxiliary file: sections/literature.aux
+A level-1 auxiliary file: sections/goals.aux
+A level-1 auxiliary file: sections/methodology.aux
+A level-1 auxiliary file: sections/evaluation.aux
+A level-1 auxiliary file: sections/projectplan.aux
+The style file: plain.bst
+Database file #1: references.bib
+Repeated entry---line 475 of file references.bib
+ : @article{brisimi2018federated
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 485 of file references.bib
+ : @article{tramel2019federated
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 494 of file references.bib
+ : @article{huang2019patient
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 504 of file references.bib
+ : @article{zhang2021multi
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 514 of file references.bib
+ : @article{ribeiro2020ensemble
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 593 of file references.bib
+ : @article{zhang2022federated
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 604 of file references.bib
+ : @article{nguyen2022federated
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 615 of file references.bib
+ : @article{qian2021artificial
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 626 of file references.bib
+ : @article{qian2021can
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "mcmahan2017communication"
+Warning--I didn't find a database entry for "qiu2022binary"
+Warning--I didn't find a database entry for "qiu2024multiclass"
+Warning--I didn't find a database entry for "buhlmann2012ensemble"
+Warning--I didn't find a database entry for "rajagopal2020stacking"
+Warning--I didn't find a database entry for "liu2024cybersecurity"
+Warning--I didn't find a database entry for "fedbids2022"
+You've used 30 entries,
+            2118 wiz_defined-function locations,
+            693 strings with 10249 characters,
+and the built_in function-call counts, 12640 in all, are:
+= -- 1241
+> -- 718
+< -- 7
++ -- 285
+- -- 252
+* -- 1000
+:= -- 2083
+add.period$ -- 95
+call.type$ -- 30
+change.case$ -- 210
+chr.to.int$ -- 0
+cite$ -- 30
+duplicate$ -- 410
+empty$ -- 885
+format.name$ -- 252
+if$ -- 2598
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 29
+newline$ -- 155
+num.names$ -- 60
+pop$ -- 190
+preamble$ -- 1
+purify$ -- 180
+quote$ -- 0
+skip$ -- 307
+stack$ -- 0
+substring$ -- 877
+swap$ -- 99
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 120
+warning$ -- 0
+while$ -- 119
+width$ -- 32
+write$ -- 338
+(There were 9 error messages)

@@ -1,0 +1,166 @@
+\chapter {Project Plan}
+% \chapter{Evaluation}
+\section{Work Breakdown Structure (WBS)}
+To ensure smooth progress and timely delivery, the development of the MStacking framework is organized into seven structured phases. Each phase includes specific tasks that align with the overall project objectives:
+
+\begin{table}[htbp]
+\centering
+\caption{Project Workflow Phases}
+\label{tab:workflow}
+\renewcommand{\arraystretch}{1.5} % Adjusted row spacing
+\setlength{\tabcolsep}{6pt} % Increased horizontal padding
+\begin{tabular}{|>{\bfseries}l!{\vrule width 1.2pt}p{9.5cm}|}
+\hline
+\rowcolor{gray!15}
+\textbf{Phase} & \textbf{Description} \\ \hline
+
+1. Research \& Literature Review & 
+Study recent work in federated learning, stacking, heart sound classification, and AI in healthcare. \\ \hline
+
+2. System Design & 
+\vspace{-4mm}\begin{itemize}[leftmargin=*,nosep]
+\item Define the MStacking architecture.
+\item Plan client-server interactions and simulation topology.
+\item Outline metadata and communication protocol.
+\end{itemize} \\ \hline
+
+3. Data Preparation & 
+\vspace{-4mm}\begin{itemize}[leftmargin=*,nosep]
+\item Preprocess PCG signals using MFCC and CWT.
+\item Partition datasets into star-structured splits for FL simulation.
+\item Validate multimodal input formats.
+\end{itemize} \\ \hline
+
+4. Local Model Implementation & 
+\vspace{-4mm}\begin{itemize}[leftmargin=*,nosep]
+\item Implement and train Random Forest, FNN, and CNN models.
+\item Optimize each for local client data characteristics.
+\end{itemize} \\ \hline
+
+5. Stacking \& Federated Aggregation & 
+\vspace{-4mm}\begin{itemize}[leftmargin=*,nosep]
+\item Design metadata schema (predictions, densities).
+\item Build meta-learner.
+\item Integrate client outputs into a unified global model.
+\end{itemize} \\ \hline
+
+6. Evaluation \& Validation & 
+\vspace{-4mm}\begin{itemize}[leftmargin=*,nosep]
+\item Run experiments under non-IID, imbalanced, and noisy data scenarios.
+\item Compare with centralized and traditional FL models.
+\item Use metrics like accuracy, F1-score, AUROC, SHAP.
+\end{itemize} \\ \hline
+
+7. Documentation \& Presentation & 
+\vspace{-4mm}\begin{itemize}[leftmargin=*,nosep]
+\item Prepare final report, figures, and codebase documentation.
+\item Present results and insights clearly for academic submission.
+\end{itemize} \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Timeline:} Each phase is allocated 2-3 weeks with overlapping activities where possible
+\item \textbf{Dependencies:} Sequential flow with iterative refinement loops between phases
+\item \textbf{Deliverables:} Technical reports, prototype implementations, and evaluation results at each phase
+\end{itemize}
+
+
+\section{Timeline and Gantt Chart}
+The project will be completed over a  four-month period, with major deliverables planned at each stage. Below  is the proposed timeline in a Gantt chart format:
+
+\begin{figure}[htbp]
+\centering
+\begin{ganttchart}[
+    % Chart configuration
+    x unit=0.8cm,
+    y unit title=0.8cm,
+    y unit chart=0.8cm,
+    vgrid,
+    hgrid,
+    title height=1,
+    title label font=\bfseries\footnotesize,
+    bar/.append style={fill=blue!30, rounded corners=2pt},
+    bar height=0.6,
+    bar label font=\footnotesize,
+    milestone/.append style={fill=red!50, rounded corners=2pt},
+    milestone label font=\footnotesize,
+    group/.append style={draw=black, fill=green!20},
+    group left shift=0,
+    group right shift=0,
+    group height=.3,
+    group peaks tip position=0,
+    bar incomplete/.append style={fill=yellow!30}
+]{1}{16} % 16 weeks total
+    
+    % Months
+    \gantttitle{July}{4}
+    \gantttitle{August}{4}
+    \gantttitle{September}{4}
+    \gantttitle{October}{4} \\
+    
+    % Week numbers
+    \gantttitlelist{1,...,16}{1} \\
+    
+    % Tasks
+    \ganttbar{Literature Review \& Planning}{1}{5} \\
+    \ganttbar{System Design}{1}{7} \\
+    \ganttbar{Dataset Preparation}{5}{6} \\
+    \ganttbar{Local Model Development}{5}{6} \\
+    \ganttbar{Stacking \& Aggregation Module}{7}{12} \\
+    \ganttbar{Evaluation \& Testing}{12}{14} \\
+    \ganttbar{Documentation \& Final Report}{13}{16} \\
+    \ganttbar{Presentation Preparation}{15}{16}
+    
+    % Vertical lines separating months
+    \ganttvrule{4}{4}
+    \ganttvrule{8}{8}
+    \ganttvrule{12}{12}
+\end{ganttchart}
+\caption{Project Timeline Gantt Chart}
+\label{fig:gantt}
+\end{figure}
+
+\section{Resources and Tools}
+To develop, test,  and evaluate the MStacking framework efficiently, the following tools and platforms will be utilized:
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Software Tools:} Python 3.x, PyTorch, OpenSMILE, LibROSA, Flower, FedML, and Jupyter  Notebooks.
+\item \textbf{Hardware:} University-provided GPU-enabled machines and cloud services like Google Colab and Kaggle  for additional compute support.
+\item \textbf{Version Control:} Git and GitHub for collaborative development and version tracking.
+\item \textbf{Documentation} Overleaf (LaTeX) for professional academic writing and formatting.
+\item \textbf{Visualization Monitoring:} Matplotlib, Seaborn, and TensorBoard for experiment tracking and performance visualization.
+\end{itemize}
+
+
+
+
+\section{Risk Management}
+Identified risks and corresponding mitigation strategies are outlined in the table below:
+\begin{table}[htbp]
+\centering
+\caption{Risk and Mitigation Strategy}
+\label{tab:workflow}
+\renewcommand{\arraystretch}{1.3} % Adjusted row spacing
+\setlength{\tabcolsep}{6pt} % Increased horizontal padding
+\begin{tabular}{|<{\bfseries}l!{\vrule width 0.8pt}p{7.5cm}|}
+\hline
+\rowcolor{gray!15}
+\textbf{Risk} & \textbf{Mitigation Strategy} \\ \hline
+
+1. Insufficient compute resources & 
+Leverage cloud-based platforms (Google Colab, Kaggle) for GPU access. \\ \hline
+
+2. Time constraints during academic semester & 
+Apply agile development cycles; prioritize the core MStacking framework before add-ons. \\ \hline
+
+3. Lack of access to real-time medical data & 
+Use realistic, publicly available datasets like PhysioNet to simulate clinical settings. \\ \hline
+
+4. Debugging federated heterogeneity issues & 
+Conduct isolated tests for each local model type (RF, FNN, CNN) before integration. \\ \hline
+
+
+\end{tabular}
+\end{table}
+

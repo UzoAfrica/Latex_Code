@@ -1,0 +1,184 @@
+\begin{thebibliography}{10}
+
+\bibitem{alshamrani2022iot}
+M.~Alshamrani.
+\newblock Iot and artificial intelligence implementations for remote healthcare
+  monitoring systems: A survey.
+\newblock {\em J. King Saud Univ.- Comput. Inf. Sci.}, 34(8):4687--4701, 2022.
+
+\bibitem{brisimi2018federated}
+T.~S. Brisimi, R.~Chen, T.~Mela, A.~Olshevsky, I.~C. Paschalidis, and W.~Shi.
+\newblock Federated learning of predictive models from federated electronic
+  health records.
+\newblock {\em Int. J. Med. Inform.}, 112:59--67, 2018.
+
+\bibitem{clifford2016classification}
+G.~D. Clifford et~al.
+\newblock Classification of normal/abnormal heart sound recordings: The
+  physionet/computing in cardiology challenge 2016.
+\newblock In {\em Proc. Comput. Cardiol.}, pages 609--612, 2016.
+
+\bibitem{huang2019patient}
+L.~Huang, A.~L. Shea, H.~Qian, A.~Masurkar, H.~Deng, and D.~Liu.
+\newblock Patient clustering improves efficiency of federated machine learning
+  to predict mortality and hospital stay time using distributed electronic
+  medical records.
+\newblock {\em J. Biomed. Inform.}, 99, 2019.
+\newblock Art. no. 103291.
+
+\bibitem{huang2022learn}
+Wenke Huang, Mao Ye, and Bo~Du.
+\newblock Learn from others and be yourself in heterogeneous federated
+  learning.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 10143--10153. IEEE, June 2022.
+
+\bibitem{itahara2023distillation}
+Sohei Itahara, Takayuki Nishio, Yusuke Koda, Masahiro Morikura, and Koji
+  Yamamoto.
+\newblock Distillation-based semi-supervised federated learning for
+  communication-efficient collaborative training with non-iid private data.
+\newblock {\em IEEE Transactions on Wireless Communications}, 22(1):152--165,
+  2023.
+
+\bibitem{li2020review}
+S.~Li, F.~Li, S.~Tang, and W.~Xiong.
+\newblock A review of computer-aided heart sound detection techniques.
+\newblock {\em Biomed Res. Int.}, 2020:5846191, 2020.
+
+\bibitem{lin2020ensemble}
+T.~Lin, L.~Kong, S.~U. Stich, and M.~Jaggi.
+\newblock Ensemble distillation for robust model fusion in federated learning.
+\newblock In {\em Proc. Adv. Neural Inf. Process. Syst.}, pages 2351--2363,
+  2020.
+
+\bibitem{liu2016openaccess}
+Chengyu Liu, David Springer, Qiao Li, Benjamin Moody, Ricardo~Abad Juan,
+  Francisco~J Chorro, Francisco Castells, Jos{\'e}~Millet Roig, Ikaro Silva,
+  Alistair~EW Johnson, et~al.
+\newblock An open access database for the evaluation of heart sound algorithms.
+\newblock {\em Physiological Measurement}, 37(12):2181, 2016.
+
+\bibitem{liu2016open}
+Chengyu Liu, David~B Springer, Qiao Li, Benjamin Moody, Rafael Juan,
+  Francisco~J Chorro, Francisco Castells, Jose~M Roig, Ikaro Silva, Alistair
+  E~W Johnson, and Gari~D Clifford.
+\newblock An open access database for the evaluation of heart sound algorithms.
+\newblock {\em Physiological Measurement}, 37(12):2181--2213, 2016.
+
+\bibitem{mori2023multi}
+J.~Mori, T.~Yoshiyama, R.~Furukawa, and I.~Teranishi.
+\newblock Personalized federated learning with multi-branch architecture.
+\newblock In {\em Proc. IEEE Int. Joint Conf. Neural Netw.}, pages 1--8, 2023.
+
+\bibitem{nguyen2022federated}
+D.~C. Nguyen et~al.
+\newblock Federated learning for smart healthcare: A survey.
+\newblock {\em ACM Comput. Surv.}, 55(3):1--37, 2022.
+
+\bibitem{qian2021can}
+K.~Qian, T.~Koike, K.~Yoshiuchi, B.~W. Schuller, and Y.~Yamamoto.
+\newblock Can appliances understand the behavior of elderly via machine
+  learning? a feasibility study.
+\newblock {\em IEEE Internet Things J.}, 8(10):8343--8355, 2021.
+
+\bibitem{qian2019deep}
+K.~Qian, Z.~Ren, F.~Dong, W.-H. Lai, B.~W. Schuller, and Y.~Yamamoto.
+\newblock Deep wavelets for heart sound classification.
+\newblock In {\em 2019 International Symposium on Intelligent Signal Processing
+  and Communication Systems (ISPACS)}, pages 1--2. IEEE, 2019.
+
+\bibitem{qian2021artificial}
+K.~Qian, Z.~Zhang, Y.~Yamamoto, and B.~W. Schuller.
+\newblock Artificial intelligence internet of things for the elderly.
+\newblock {\em IEEE Signal Process. Mag.}, 38(4):78--88, 2021.
+
+\bibitem{qiu2022fl}
+Siyu Qiu, Yilin Wang, Chengyu Liu, and Gari~D Clifford.
+\newblock Federated learning for heart sound classification.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, 69(8):2562--2572,
+  2022.
+
+\bibitem{ribeiro2020ensemble}
+Mateus Henrique Dal~Molin Ribeiro and Leandro dos Santos~Coelho.
+\newblock Ensemble approach based on bagging, boosting and stacking for
+  short-term prediction in agribusiness time series.
+\newblock {\em Applied Soft Computing}, 86:105837, 2020.
+
+\bibitem{roth2020global}
+G.~A. Roth et~al.
+\newblock Global burden of cardiovascular diseases and risk factors,
+  1990–2019: Update from the gbd 2019 study.
+\newblock {\em J. Amer. College Cardiol.}, 76(25):2982--3021, 2020.
+
+\bibitem{roy2019heart}
+J.~K. Roy, T.~S. Roy, and S.~C. Mukhopadhyay.
+\newblock Heart sound: Detection and analytical approach towards diseases.
+\newblock In {\em Modern Sensing Technologies}, pages 103--145. Springer, 2019.
+
+\bibitem{shaik2022fedstack}
+Thanveer Shaik, Xiaohui Tao, Niall Higgins, Raj Gururajan, Xujuan Zhou, and
+  U~Rajendra Acharya.
+\newblock Fedstack: Personalized activity monitoring using stacked federated
+  learning.
+\newblock {\em Knowledge-Based Systems}, 257:109929, 2022.
+
+\bibitem{swarup2018digital}
+S.~Swarup and A.~N. Makaryus.
+\newblock Digital stethoscope: Technology update.
+\newblock {\em Medical Devices: Evidence and Research}, 11:29--36, 2018.
+
+\bibitem{tan2023towards}
+A.~Z. Tan, H.~Yu, L.~Cui, and Q.~Yang.
+\newblock Towards personalized federated learning.
+\newblock {\em IEEE Trans. Neural Netw. Learn. Syst.}, 34(12):9587--9603, Dec.
+  2023.
+
+\bibitem{tramel2019federated}
+E.~Tramel.
+\newblock Federated learning: Rewards \& challenges of distributed private ml.
+\newblock Accessed May, 2019.
+\newblock Art. no. 2019.
+
+\bibitem{wang2023explainability}
+Li~Wang, Hao Zhang, Yutong Chen, and Gari~D Clifford.
+\newblock Explainable ai for phonocardiogram classification.
+\newblock {\em IEEE Journal of Biomedical and Health Informatics},
+  27(4):1872--1881, 2023.
+
+\bibitem{winther2021advanced}
+S.~Winther et~al.
+\newblock Advanced heart sound analysis as a new prognostic marker in stable
+  coronary artery disease.
+\newblock {\em European Heart Journal-Digital Health}, 2(2):279--289, 2021.
+
+\bibitem{xu2021federated}
+J.~Xu, B.~S. Glicksberg, C.~Su, P.~Walker, J.~Bian, and F.~Wang.
+\newblock Federated learning for healthcare informatics.
+\newblock {\em J. Healthcare Inform. Res.}, 5(1):1--19, 2021.
+
+\bibitem{xu2023federated}
+Xiaoxiao Xu, Howard~H Deng, Jaime Gateno, and Pingkun Yan.
+\newblock Federated multi-organ segmentation with inconsistent labels.
+\newblock {\em IEEE Transactions on Medical Imaging}, 42(10):2948--2960, 2023.
+
+\bibitem{yoo2021personalized}
+J.~H. Yoo et~al.
+\newblock Personalized federated learning with clustering: Non-iid heart rate
+  variability data application.
+\newblock In {\em Proc. IEEE Int. Conf. Inf. Commun. Technol. Convergence},
+  pages 1046--1051, 2021.
+
+\bibitem{zhang2021multi}
+Hongliang Zhang, Jianguo Li, Xiaoming Liu, and Chen Dong.
+\newblock Multi-dimensional feature fusion and stacking ensemble mechanism for
+  network intrusion detection.
+\newblock {\em Future Generation Computer Systems}, 122:130--143, 2021.
+
+\bibitem{zhang2022federated}
+T.~Zhang, L.~Gao, C.~He, M.~Zhang, B.~Krishnamachari, and A.~S. Avestimehr.
+\newblock Federated learning for the internet of things: Applications,
+  challenges, and opportunities.
+\newblock {\em IEEE Internet Things Mag.}, 5(1):24--29, 2022.
+
+\end{thebibliography}

@@ -1,0 +1,11 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Research background. (a) Data-centric centralised learning, which pools data together to train a central ML model. (b) In traditional FL, the global model is trained under the coordination of the central server while data resides in different data silos. (c) The proposed heterogeneous FL, which addresses the limitations of FL through ensemble personalised models learning. }}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Federated learning workflow with local model training, secure aggregation, and global model distribution.}}{9}{figure.caption.5}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Figure 3 illustrates the architecture diversity across clients, showing how each local model (Virtual Network Function ) feeds into the broader federated learning system while maintaining autonomy over its training process.}}{15}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces MStacking Two-Level Ensemble Architecture: Client-level models generate predictions and densities, aggregated by a central meta-learner into a global classifier.}}{16}{figure.caption.10}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Project Timeline Gantt Chart}}{25}{figure.caption.13}%

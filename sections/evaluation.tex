@@ -1,0 +1,99 @@
+\chapter{Evaluation}
+
+
+\section{Evaluation Objectives}
+\label{sec:evaluation_objectives}
+
+The evaluation phase aims to rigorously assess how well the proposed MStacking framework performs under realistic, decentralized healthcare scenarios. Key goals include:
+
+\begin{itemize}
+    \item Measuring the classification accuracy of the global multi-class model built via stacking.
+    \item Comparing MStacking’s performance to traditional centralized learning and standard FL methods like FedAvg.
+    \item Testing robustness against client heterogeneity, label misalignment, and imbalanced data distributions.
+    \item Assessing system efficiency by tracking communication overhead and computational cost.
+    \item Exploring the interpretability of predictions using feature attribution tools such as SHAP.
+\end{itemize}
+
+\section{Evaluation Metrics}
+\label{sec:evaluation_metrics}
+
+To ensure a comprehensive analysis, the following metrics will be employed:
+
+\begin{itemize}
+    \item \textbf{Accuracy}: Overall rate of correct predictions.
+    \item \textbf{Precision, Recall, F1-Score}: Evaluated per class to reflect detection sensitivity and specificity. Macro-averaged versions will be emphasized to address class imbalance.
+    \item \textbf{AUROC}: Measures the model's ability to distinguish between classes under varying thresholds.
+    \item \textbf{Confusion Matrix}: Highlights where and how often misclassifications occur.
+    \item \textbf{Model Communication Cost}: Total size of metadata exchanged between clients and the server.
+    \item \textbf{Training Time per Round}: Gauges the runtime efficiency of global model updates.
+    \item \textbf{Model Interpretability}: Investigated via SHAP or similar techniques to understand decision rationale.
+\end{itemize}
+
+\section{Experimental Setup}
+\label{sec:experimental_setup}
+
+\textbf{Datasets:}
+\begin{itemize}
+    \item \textit{PhysioNet/CinC Challenge 2016}~\cite{clifford2016classification}: Main benchmark dataset, with 3,000+ annotated heart sound recordings.
+    \item \textit{Additional PCG datasets}~\cite{liu2016open}: Used to simulate diverse client data conditions and class variety.
+\end{itemize}
+
+\textbf{Client Configuration:}
+\begin{itemize}
+    \item 5 to 10 virtual clients will be created.
+    \item Each client will have a non-IID data partition containing the normal class and a distinct abnormal class (star-structure).
+    \item Clients will use varying model types (e.g., RF, FNN, CNN) to simulate hardware and algorithmic diversity.
+\end{itemize}
+
+\textbf{Baselines for Comparison:}
+\begin{itemize}
+    \item Centralized CNN trained on full data.
+    \item Traditional FL (FedAvg) with uniform models and aligned labels.
+    \item Personalized FL using clustered or fine-tuned models.
+    \item Ablation Study to evaluate the role of metadata: predictions only vs. predictions + densities.
+\end{itemize}
+
+\section{Evaluation Procedure}
+\label{sec:evaluation_procedure}
+
+\textbf{1. Training Phase:}
+\begin{itemize}
+    \item Clients train local binary classifiers.
+    \item Output includes prediction probabilities and Gaussian Mixture-based density estimates.
+    \item These are sent to the server and integrated into a global model using stacking.
+\end{itemize}
+
+\textbf{2. Validation Phase:}
+\begin{itemize}
+    \item A held-out multi-class dataset is used to evaluate the global model.
+    \item Metrics are updated after each training round.
+\end{itemize}
+
+\textbf{3. Stress Testing:}
+\begin{itemize}
+    \item Client dropouts to test resilience.
+    \item Label noise to assess robustness.
+    \item Imbalanced class samples to evaluate fairness.
+\end{itemize}
+
+\textbf{4. Result Analysis:}
+\begin{itemize}
+    \item Results will be visualized using ROC curves, training/validation loss plots, and confusion matrices.
+    \item Comparative tables will summarize performance against baselines.
+    \item A detailed discussion will highlight the strengths and trade-offs of MStacking.
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\caption{Performance Comparison with Existing Methods}
+\label{tab:performance_comparison}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|p{2cm}|p{1cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Method} & \textbf{Model Type} & \textbf{Setting} & \textbf{Data Mode} & \textbf{Accuracy} & \textbf{UF1 Score} & \textbf{UAR Score} & \textbf{Notes} \\ \hline
+Centralized CNN & CNN & Centralized & Balanced & Moderate & Moderate & Moderate & Traditional learning with full label sharing \\ \hline
+Fed-BIDS~\cite{fedbids2022} & RF + NN Meta & Federated & Balanced & High & Moderate & Moderate & Blends metadata for intrusion detection \\ \hline
+Fed-MStacking (Homog.) & RF / FNN / CNN & Federated & Balanced & Higher & Higher & Higher & Uses identical architectures across clients \\ \hline
+Fed-MStacking (Hetero) & RF + FNN + CNN & Federated & Balanced & Highest & Highest & Highest & Supports diverse models \& misaligned class labels (This work) \\ \hline
+\end{tabular}
+\end{table}
